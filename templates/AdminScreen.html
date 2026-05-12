@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<div class="logo">SSL<span>-WSC</span></div>
+
+<ul class="nav-links">
+<li><a href="Predict">Predict Again</a></li>
+<li><a href="index">Logout</a></li>
+</ul>
+
+</nav>
+
+<section class="main-container">
+
+<div class="card">
+
+<div class="title">
+
+<h1>Prediction Result</h1>
+
+<p>
+Machine Learning based quality classification output.
+</p>
+
+</div>
+
+<div class="result-box">
+
+{{ msg }}
+
+</div>
+
+<div class="button-group">
+
+<a href="Predict"
+class="btn btn-primary">
+
+Predict Again
+
+</a>
+
+<a href="index"
+class="btn btn-secondary">
+
+Logout
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<footer class="footer">
+© 2026 SSL-WSC Project
+</footer>
+
+</body>
+</html>
